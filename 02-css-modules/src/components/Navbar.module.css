@@ -1,0 +1,72 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background-color: var(--color-primary);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.toggle {
+  width: 40px;
+  height: 24px;
+  background-color: #cccccc;
+  border-radius: 9999px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+.toggle:hover {
+  background-color: #3d3939;
+}
+
+.circle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.active {
+  background-color: #111827;
+}
+.active .circle {
+  transform: translateX(16px);
+}
+
+.cart {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cart span {
+  background-color: #2563eb;
+  color: var(--color-primary);
+  padding: 2px 6px;
+  border-radius: 9999px;
+  margin-left: 4px;
+  font-weight: bold;
+}

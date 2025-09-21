@@ -1,0 +1,15 @@
+.buttonOutline {
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.buttonOutline:hover:not(:disabled) {
+  background: #e6f0ff;
+  color: #1d4ed8;
+}
