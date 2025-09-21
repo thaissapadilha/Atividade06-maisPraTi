@@ -8,7 +8,6 @@ const ProductCard = ({ product, onAdd, loading }) => {
       tabIndex={0}
       aria-label={`Produto: ${product.title}`}
     >
-      {/* Imagem com proporção 1:1 + skeleton */}
       <div className="relative w-full aspect-square bg-gray-100 dark:bg-gray-800">
         {loading ? (
           <div className="animate-pulse w-full h-full bg-gray-300 dark:bg-gray-700" />
@@ -22,9 +21,7 @@ const ProductCard = ({ product, onAdd, loading }) => {
         )}
       </div>
 
-      {/* Conteúdo */}
       <div className="p-3 flex flex-col flex-1">
-        {/* Título + Tag */}
         <div className="flex items-start justify-between gap-2">
           <h3
             className="text-sm font-medium leading-snug line-clamp-2"
@@ -39,7 +36,6 @@ const ProductCard = ({ product, onAdd, loading }) => {
           )}
         </div>
 
-        {/* Preço + Avaliação */}
         <div className="mt-2 flex-1">
           <div className="text-sm font-bold text-blue-600 dark:text-blue-400">
             R$ {product.price.toFixed(2)}
@@ -52,7 +48,6 @@ const ProductCard = ({ product, onAdd, loading }) => {
           </div>
         </div>
 
-        {/* Botão fixado no rodapé */}
         <div className="mt-auto pt-3">
           <Button
             variant="outline"

@@ -69,7 +69,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Botão flutuante para abrir o carrinho */}
       <button
         className={styles.cartFloatBtn}
         onClick={() => setCartOpen(true)}

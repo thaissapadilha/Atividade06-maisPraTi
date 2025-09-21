@@ -7,15 +7,12 @@ export function Navbar({ cartCount = 0, onToggleTheme, theme, onToggleCart }) {
   return (
     <header className="fixed inset-x-0 top-0 z-40 bg-bg/80 backdrop-blur border-b border-surface/50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-        {/* Logo e navegação */}
         <div className="flex items-center gap-3">
           <div className="font-bold text-lg">Mini Loja Pratas</div>
           <nav aria-label="main navigation" className="hidden md:flex gap-3" />
         </div>
 
-        {/* Ações: tema + carrinho */}
         <div className="flex items-center gap-3">
-          {/* Botão tipo alavanca */}
           <button
             onClick={onToggleTheme}
             aria-label="Alternar tema claro/escuro"
@@ -30,7 +27,6 @@ export function Navbar({ cartCount = 0, onToggleTheme, theme, onToggleCart }) {
             ></div>
           </button>
 
-          {/* Botão do carrinho */}
           <button
             aria-label="Abrir carrinho"
             className="relative focus-ring rounded-md p-2"

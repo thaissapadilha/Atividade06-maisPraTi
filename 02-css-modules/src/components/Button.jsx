@@ -12,7 +12,6 @@ export default function Button({
 
   const buttonClass = theme === "dark" ? styles.button : styles.buttonOutline;
 
-  // Permite combinar classes externas com o estilo do botão
   const combinedClassName = `${buttonClass} ${className}`.trim();
 
   return (
